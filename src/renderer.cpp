@@ -41,22 +41,22 @@ Renderer::Renderer(const std::size_t screen_width,
   }
   
   std::string sPath = SDL_GetBasePath();
-  sPath += "../../Resources/arial.ttf";
+  sPath += "../Resources/arial.ttf";
   //Draw text
   font = TTF_OpenFont(sPath.c_str(), 20);
   
   sPath = SDL_GetBasePath();
-  sPath += "../../Resources/snake.bmp";
+  sPath += "../Resources/snake.bmp";
   snake_surfc = SDL_LoadBMP(sPath.c_str());
   image_head = SDL_CreateTextureFromSurface(sdl_renderer, snake_surfc);
 
   sPath = SDL_GetBasePath();
-  sPath += "../../Resources/fire.bmp";
+  sPath += "../Resources/fire.bmp";
   fire_surfc = SDL_LoadBMP(sPath.c_str());
   image_fire = SDL_CreateTextureFromSurface(sdl_renderer, fire_surfc);
 
   sPath = SDL_GetBasePath();
-  sPath += "../../Resources/food.bmp";
+  sPath += "../Resources/food.bmp";
   food_surfc = SDL_LoadBMP(sPath.c_str());
   image_food = SDL_CreateTextureFromSurface(sdl_renderer, food_surfc);
 
