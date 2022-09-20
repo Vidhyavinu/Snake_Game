@@ -26,9 +26,15 @@ In this project, you can build your own C++ application or extend this Snake gam
 ## Basic Build Instructions
 
 1. Clone this repo.
-2. Make a build directory in the top level directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./SnakeGame`.
+2. Install SDL_image and SDL_ttf libraries.
+   
+   For Linux use the following command:
+   sudo apt-get install libsdl2-ttf-dev
+   sudo apt-get install libsdl2-image-dev
+   
+4. Make a build directory in the top level directory: `mkdir build && cd build`
+5. Compile: `cmake .. && make`
+6. Run it: `./SnakeGame`.
 
 
 ## CC Attribution-ShareAlike 4.0 International
